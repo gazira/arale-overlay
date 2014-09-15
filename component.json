@@ -1,0 +1,11 @@
+{
+    "name": "arale-overlay",
+    "version": "1.2.0",
+    "main": "src/overlay.js",
+    "dependencies": {
+        "component/jquery": "1.0.0",
+        "gazira/widget": "master",
+        "gazira/position": "master",
+        "gazira/iframe-shim": "master"
+    }
+}
