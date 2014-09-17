@@ -16,6 +16,7 @@ var Overlay = Widget.extend({
     height: null,
     zIndex: 99,
     visible: false,
+    repositionOnResize: true, // resize时重新定位
 
     // 定位配置
     align: {
@@ -50,7 +51,7 @@ var Overlay = Widget.extend({
     // 加载 iframe 遮罩层并与 overlay 保持同步
     this._setupShim();
     // 窗口resize时，重新定位浮层
-    this._setupResize();
+    this.get('repositionOnResize') && this._setupResize();
 
     this.after('render', function () {
       var _pos = this.element.css('position');
@@ -174,7 +175,7 @@ var Overlay = Widget.extend({
 
 // 绑定 blur 隐藏事件
 Overlay.blurOverlays = [];
-$(document).on('click', function (e) {
+$(document).on('mousedown', function (e) {
   hideBlurOverlays(e);
 });
 
