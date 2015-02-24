@@ -1,7 +1,7 @@
 var $ = require("jquery"),
     Position = require("position"),
-    Shim = require("iframe-shim"),
-    Widget = require("widget");
+    Shim = require("arale-iframe-shim"),
+    Widget = require("arale-widget");
 
 
 // Overlay
