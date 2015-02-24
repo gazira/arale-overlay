@@ -4,8 +4,8 @@
     "main": "src/overlay.js",
     "dependencies": {
         "component/jquery": "1.0.0",
-        "gazira/widget": "master",
-        "gazira/position": "master",
-        "gazira/iframe-shim": "master"
+        "gazira/arale-widget": "1.2.0",
+        "gazira/position": "1.1.0",
+        "gazira/arale-iframe-shim": "1.1.0"
     }
 }
